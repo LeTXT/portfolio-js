@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="img/contacts/github.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Leandro Oliveira com projetos, stack e formas de contato."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Leandro Oliveira | Portfolio</title>
+  </head>
+  <body class="theme-dark">
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#inicio">Leandro.dev</a>
+        <nav class="topnav" aria-label="Navegacao principal">
+          <a href="#stack">Stack</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="inicio">
+          <div class="hero-copy">
+            <p class="eyebrow">Frontend Developer</p>
+            <h1>Oi, eu sou Leandro.</h1>
+            <p class="hero-text">
+              Crio interfaces com foco em clareza visual, boas interações e codigo
+              simples de evoluir.
+            </p>
+            <p class="hero-type">
+              <span id="typed-text"></span>
+              <span class="caret" aria-hidden="true"></span>
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projetos">Ver projetos</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/leandrogdo/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Resumo profissional">
+            <!-- <p class="panel-label">Agora</p> -->
+            <p class="panel-highlight" id="coffee-error">
+              Café, codigo e criatividade
+            </p>
+          </aside>
+        </section>
+
+        <section class="ticker-section" id="stack" aria-labelledby="stack-title">
+          <div class="section-heading">
+            <p class="section-kicker">Stack</p>
+            <h2 id="stack-title">Tecnologias que uso no dia a dia</h2>
+          </div>
+          <div class="ticker-mask">
+            <div class="ticker-track" id="ticker-track"></div>
+          </div>
+        </section>
+
+        <section class="projects-section" id="projetos" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <p class="section-kicker">Projetos</p>
+            <h2 id="projects-title">Experimentos e interfaces publicadas</h2>
+          </div>
+          <div class="project-filters" id="project-filters" aria-label="Filtros de projeto"></div>
+          <div class="projects-grid" id="projects-grid"></div>
+          <p class="feedback-note">
+            Feedbacks são bem-vindos.
+          </p>
+        </section>
+
+        <section class="contact-section" id="contato" aria-labelledby="contact-title">
+          <div class="section-heading">
+            <p class="section-kicker">Contato</p>
+            <h2 id="contact-title">Vamos conversar</h2>
+          </div>
+          <p class="contact-copy">
+            Aberto para freelas, colaborações e novas oportunidades.
+          </p>
+          <div class="contact-grid" id="contact-grid"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="clock-group">
+          <span id="clock-brt">BRT --:--:--</span>
+          <span id="clock-local">Local --:--:--</span>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
